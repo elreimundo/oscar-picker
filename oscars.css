@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+
+.nominee {
+  border: 1px solid white;
+  width: 100%;
+}
+
+.active {
+  background-color: green;
+}
+
+.poster {
+  width: 261px;
+  height: 417px;
+  border: 1px solid white;
+}
+
+.oscar-picker {
+  width: 500px;
+}
