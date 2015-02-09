@@ -1,0 +1,286 @@
+'hi mom'
+"hi mom"
+"hi mom"
+"hi mom"
+'hi #{mom}'
+"hi #{mom}"
+"hi #{mom}"
+"hi #{mom}"
+'hi' + ' ' + 'mom'
+"hi mom"
+"hi #{mom}".length
+9
+"hi #{mom}"[3]
+"#"
+"hi #{mom}"[0]
+"h"
+"hi #{mom}" << 'sup'
+0
+var myString = 'hi mom'
+undefined
+8
+8
+8.class
+VM219:2 Uncaught SyntaxError: Unexpected token ILLEGAL
+8.type
+VM232:2 Uncaught SyntaxError: Unexpected token ILLEGAL
+typeof 8
+"number"
+typeof 8.1
+"number"
+0.2 + 0.1
+0.30000000000000004
+(10 * 0.2 + 10 * 0.1) / 10
+0.3
+3/4
+0.75
+true
+true
+false
+false
+!true
+false
+!false
+true
+!!true
+true
+!!false
+false
+!!'hi mom'
+true
+!!''
+false
+!!0
+false
+var undefinedThing;
+undefined
+var myNumber = undefinedThing || 3;
+undefined
+myNumber
+3
+var myNumber = undefinedThing || aVariableThatHasntbeenDefined;
+VM487:2 Uncaught ReferenceError: aVariableThatHasntbeenDefined is not defined
+var myNumber = undefinedThing || alert('oh noes!');
+undefined
+var myNumber = true || alert('oh noes!');
+undefined
+var myNumber = true || alert(four);
+undefined
+foru
+VM494:2 Uncaught ReferenceError: foru is not defined
+four
+VM507:2 Uncaught ReferenceError: four is not defined
+8 + '4'
+"84"
+8 - '4'
+4
+8 - 'seven'
+NaN
+typeof NaN
+"number"
+NaN + 3
+NaN
+NaN - 7
+NaN
+undefined
+undefined
+null
+null
+typeof null
+"object"
+typeof undefined
+"undefined"
+[1, 'four', null, true]
+[1, "four", null, true]
+var myArray = [1, 'four', null, true]
+undefined
+myArray.length
+4
+myArray.pop
+function pop() { [native code] }
+var lastValueInTheArray = myArray.pop()
+undefined
+lastValueInTheArray
+true
+myArray
+[1, "four", null]
+var thePopMethod = myArray.pop
+undefined
+thePopMethod
+function pop() { [native code] }
+thePopMethod()
+VM881:2 Uncaught TypeError: Array.prototype.pop called on null or undefined
+typeof []
+"object"
+7 === 7
+true
+8 === 8
+true
+'hi mom' === 'hi mom'
+true
+true === true
+true
+true === 1
+false
+true == 1
+true
+0 == false
+true
++true
+1
++false
+0
+true == 2
+false
+null == undefined
+true
+null == null
+true
+null === undefined
+false
+[1,2,3] === [1,2,3]
+false
+myArray
+[1, "four", null]
+var otherArray = myArray
+undefined
+otherArray === myArray
+true
+otherArray.push('hi')
+4
+myArray
+[1, "four", null, "hi"]
+otherArray === [1,'four', null, 'hi']
+false
+otherArray == [1,'four', null, 'hi']
+false
+NaN === NaN
+false
+NaN == NaN
+false
+myNaN = NaN
+NaN
+myNaN === NaN
+false
+myNaN === myNaN
+false
+NaN + 5
+NaN
+NaN - 3
+NaN
+(NaN + 5) === (NaN - 3)
+false
+isNaN(NaN)
+true
+isNaN(0)
+false
+isNaN({})
+true
+{} === {}
+VM1477:2 Uncaught SyntaxError: Unexpected token ===
+function thisIsReallyIsNaN(obj) {
+   return obj !== obj;
+}
+undefined
+thisIsReallyIsNaN(NaN)
+true
+thisIsReallyIsNaN({})
+false
+var myFunc = function() {
+  console.log('hi');
+}
+undefined
+myFunc
+function () {
+  console.log('hi');
+}
+myFunc()
+VM1610:3 hi
+undefined
+var otherFunc = function(anArg) {
+  console.log('hi');
+}
+undefined
+otherFunc
+function (anArg) {
+  console.log('hi');
+}
+otherFunc()
+VM1735:3 hi
+undefined
+function checkOutThisArgument(anArg) {
+  console.log(anArg);
+}
+undefined
+checkOutThisArgument();
+VM1814:3 undefined
+undefined
+myFunc
+function () {
+  console.log('hi');
+}
+myFunc(7)
+VM1610:3 hi
+undefined
+function showMeTheArgs() {
+  console.log(arguments);
+}
+undefined
+showMeTheArgs(1, 2, {}, [1,2,3])
+VM1885:3 [1, 2, Object, Array[3]]0: 11: 22: Object3: Array[3]callee: function showMeTheArgs() {length: 4Symbol(Symbol.iterator): function ArrayValues() { [native code] }__proto__: Object
+undefined
+function howManyArgs() {
+  return arguments.length;
+}
+undefined
+howManyArgs(1,2,3)
+3
+function whatAreTheArguments(arguments) {
+  return arguments.length;
+}
+undefined
+whatAreTheArguments('this is a really long string but only one argument');
+50
+var outsideOfScope = 'oh no!'
+undefined
+function () {
+  console.log(outsideOfScope);
+}
+VM2186:2 Uncaught SyntaxError: Unexpected token (
+function lookOutside() {
+  console.log(outsideOfScope);
+}
+undefined
+lookOutside()
+VM2187:3 oh no!
+undefined
+function setAGlobal() {
+  x = 2;
+}
+undefined
+setAGlobal()
+undefined
+x
+2
+function setALocalVar() {
+  var y = 'secret';
+}
+undefined
+y
+VM2256:2 Uncaught ReferenceError: y is not defined
+setALocalVar()
+undefined
+y
+VM2267:2 Uncaught ReferenceError: y is not defined
+function messWithAnArg(x) {
+  x = 7;
+}
+undefined
+messWithAnArg(15);
+undefined
+x
+2
+messWithAnArg(x);
+undefined
+x
+2
